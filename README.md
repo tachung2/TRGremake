@@ -1,0 +1,6 @@
+![image](https://github.com/tachung2/TRGremake/assets/40621278/99c5977d-3f26-423e-9e78-304c2bcb38f5)
+![image](https://github.com/tachung2/TRGremake/assets/40621278/5122bcdd-70dd-4fc6-ad2a-512ed5c46cf7)
+![image](https://github.com/tachung2/TRGremake/assets/40621278/2cebf8d8-99f7-4169-bc46-7eee72d38d25)
+![image](https://github.com/tachung2/TRGremake/assets/40621278/1086e599-248e-43ad-a000-08225c1a8566)
+![image](https://github.com/tachung2/TRGremake/assets/40621278/1caa16c7-807f-42ec-9072-26e84bb82972)
+![image](https://github.com/tachung2/TRGremake/assets/40621278/321f71e6-057c-4e9d-ade3-0397f3165a74)
