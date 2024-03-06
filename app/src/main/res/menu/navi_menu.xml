@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    
+    <item
+        android:id="@+id/navi_home"
+        android:title="홈"
+        android:icon="@drawable/ic_home"
+        />
+    <item
+        android:id="@+id/navi_route"
+        android:title="코스"
+        android:icon="@drawable/ic_add_location"/>
+    <item
+        android:id="@+id/navi_more"
+        android:title="더보기"
+        android:icon="@drawable/ic_more"/>
+    <item
+        android:id="@+id/navi_settings"
+        android:title="설정"
+        android:icon="@drawable/ic_settings"/>
+
+
+
+</menu>

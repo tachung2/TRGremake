@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecoActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/reco_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="20dp"
+        android:text="추천 관광지"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView or LinearLayout with horizontal orientation for routes -->
+    <!-- ... -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tag_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="20dp"
+        android:text="인기 검색어"
+        android:textStyle="bold" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/tag_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycler_view"
+        app:flexWrap="wrap"
+        app:alignItems="center"
+        app:justifyContent="flex_start">
+        <!-- Dynamic TextViews for tags will be added here programmatically -->
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <ImageView
+        android:id="@+id/fab_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location_btn"
+        android:layout_gravity="right"
+        android:layout_margin="16dp"
+         />
+
+</LinearLayout>

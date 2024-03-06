@@ -1,0 +1,17 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <EditText
+            android:id="@+id/editRouteName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_style"
+            android:hint="루트 이름 입력" />
+
+    </LinearLayout>
+
+</layout>

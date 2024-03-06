@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:elevation="20dp"
+        android:background="@drawable/items_corners"
+        android:layout_marginHorizontal="10dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:id="@+id/placeImage"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/placeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="장소 이름"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/placeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="장소 설명"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+
+
+</layout>

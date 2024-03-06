@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 메인 컨텐츠 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 검색 창 및 기타 뷰 -->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:focusable="true"
+            android:padding="20dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="원하시는 지역을 검색해 주세요." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="지역추천"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/tagContainer"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            app:flexWrap="wrap"
+            app:alignItems="center"
+            app:justifyContent="center">
+
+            <TextView
+                android:id="@+id/p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tag_background"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_margin="8dp"
+                android:text="#홍대"/>
+
+            <TextView
+                android:id="@+id/p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tag_background"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_margin="8dp"
+                android:text="#춘천" />
+
+            <TextView
+                android:id="@+id/p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tag_background"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_margin="8dp"
+                android:text="#경주"/>
+
+            <TextView
+                android:id="@+id/p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tag_background"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_margin="8dp"
+                android:text="#나주"/>
+
+            <TextView
+                android:id="@+id/p5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tag_background"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_margin="8dp"
+                android:text="#여수"/>
+
+            <TextView
+                android:id="@+id/p6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tag_background"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_margin="8dp"
+                android:text="#강릉"/>
+
+            <TextView
+                android:id="@+id/p7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tag_background"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_margin="8dp"
+                android:text="#순천"/>
+
+            <TextView
+                android:id="@+id/p8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tag_background"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                android:layout_margin="8dp"
+                android:text="#인천"/>
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <!-- 기타 뷰들 (예: ImageView) -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:paddingStart="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    <!-- 사이드 네비게이션 뷰 -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawerlayout"
+        app:headerLayout="@layout/header"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

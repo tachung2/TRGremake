@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="edit_id" type="id" />
+    <item name="edit_pw" type="id" />
+    <item name="btn_login" type="id" />
+    <item name="btn_register" type="id" />
+</resources>

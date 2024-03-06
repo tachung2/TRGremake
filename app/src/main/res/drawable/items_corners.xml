@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF"/> <!-- 배경색 지정 -->
+    <corners android:radius="10dp"/> <!-- 모서리 둥글게 -->
+    <!-- 그림자를 추가하려면 뷰에 elevation 속성 사용 -->
+</shape>

@@ -3,18 +3,28 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+buildscript {
+    dependencies {
+        classpath("com.google.gms:google-services:4.3.10")
+    }
+}
+
 android {
     namespace = "com.example.trgremake"
     compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.trgremake"
-        minSdk = 34
+        minSdk = 33
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    dataBinding {
+        enable = true
     }
 
     buildTypes {
@@ -41,6 +51,16 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    implementation("com.android.volley:volley:1.2.0")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.android.flexbox:flexbox:3.0.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.google.code.gson:gson:2.8.6")
+    implementation("com.google.android.libraries.places:places:3.3.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+    implementation("androidx.databinding:databinding-runtime:8.1.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

@@ -1,0 +1,16 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 클릭된 상태 -->
+<item android:state_checked="true">
+    <shape android:shape="rectangle">
+        <solid android:color="#30cbfa"/> <!-- 클릭 시 색상 -->
+        <corners android:radius="300dp"/>
+    </shape>
+</item>
+<!-- 기본 상태 -->
+<item android:state_checked="false">
+    <shape android:shape="rectangle">
+        <solid android:color="#308FFA"/> <!-- 기본 색상 -->
+        <corners android:radius="300dp"/>
+    </shape>
+</item>
+</selector>
